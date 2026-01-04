@@ -1,0 +1,128 @@
+<html>
+
+<head>
+<script LANGUAGE="JavaScript">
+<!--
+
+if (((navigator.appName == "Netscape")
+                        && (parseInt(navigator.appVersion) >= 3 ))
+                        || ((navigator.appName == "Microsoft Internet Explorer")                
+
+                             && (parseInt(navigator.appVersion) >= 4 ))) {
+                             version = "supported";
+                     }
+                             else {
+                             version = "notsupported";
+                     }
+if (version == "supported")
+{
+                        img1on = new Image(90, 33);
+                        img1on.src = "images/gallery_on.gif";
+                        img1normal = new Image(90, 33);
+                        img1normal.src = "images/gallery.gif";
+                        img2on = new Image(105, 33);
+                        img2on.src = "images/schedule_on.gif";
+                        img2normal = new Image(105, 33);
+                        img2normal.src = "images/schedule.gif";
+                        img3on = new Image(84, 33);
+                        img3on.src = "images/resume_on.gif";
+                        img3normal = new Image(84, 33);
+                        img3normal.src = "images/resume.gif";
+                        img4on = new Image(97, 33);
+                        img4on.src = "images/contact_on.gif";
+                        img4normal = new Image(97, 33);
+                        img4normal.src = "images/contact.gif";
+                        }
+        function img_on(imgName) {
+                        if (version == "supported") {
+                        imgOn = eval(imgName + "on.src");
+                        document.images [imgName].src = imgOn;
+                        }
+                        }
+        function img_normal(imgName) {
+                        if (version == "supported") {
+                        imgNormal = eval(imgName + "normal.src");
+                        document.images [imgName].src = imgNormal;
+                        }
+}
+
+function text() {
+};
+
+text = new text();
+number = 0;
+
+// TEXT ARRAY
+text[number++] = '<td width="210" bgcolor="#000000" valign="top"><font color="#FFFFFF" size="1"><br>&nbsp;&nbsp;Photo: Claire McAdams</font><div align="center"><center><table cellspacing="5"><tr><td><p><font color="#FFFFFF" size="2"><i>Tolomeo<br></i>Handel<br>Glimmerglass Opera<br>2010</font></p></td></tr></table></center></div>'
+text[number++] = '<td width="210" bgcolor="#000000" valign="top"><font color="#FFFFFF" size="1"><br>&nbsp;&nbsp;Photo: Paul Horpedahl</font><div align="center"><center><table cellspacing="5"><tr><td><p><font color="#FFFFFF" size="2"><i>La Clemenza di Tito<br></i>Mozart<br>Santa Fe Opera<br>2002</font></p></td></tr></table></center></div>'
+text[number++] = '<td width="210" bgcolor="#000000" valign="top"><font color="#FFFFFF" size="1"><br>&nbsp;&nbsp;Photo: Paul Horpedahl</font><div align="center"><center><table cellspacing="5"><tr><td><p><font color="#FFFFFF" size="2"><i>La Clemenza di Tito<br></i>Mozart<br>Santa Fe Opera<br>2002</font></p></td></tr></table></center></div>'
+text[number++] = '<td width="210" bgcolor="#000000" valign="top"><font color="#FFFFFF" size="1"><br>&nbsp;&nbsp;Photo: Dan Rest</font><div align="center"><center><table cellspacing="5"><tr><td><p><font color="#FFFFFF" size="2"><i>Die Entführung aus dem Serail<br></i>Mozart<br>Lyric Opera of Chicago<br>2009</font></p></td></tr></table></center></div>'
+text[number++] = '<td width="210" bgcolor="#000000" valign="top"><font color="#FFFFFF" size="1"><br>&nbsp;&nbsp;Photo: Dan Rest</font><div align="center"><center><table cellspacing="5"><tr><td><p><font color="#FFFFFF" size="2"><i>The Cunning Little Vixen<br></i>Janacek<br>Lyric Opera of Chicago<br>2004</font></p></td></tr></table></center></div>'
+text[number++] = '<td width="210" bgcolor="#000000" valign="top"><font color="#FFFFFF" size="1"><br>&nbsp;&nbsp;Photo: Lenore Doxsee</font><div align="center"><center><table cellspacing="5"><tr><td><p><font color="#FFFFFF" size="2"><i>Giulio Cesare in Egitto<br></i>Handel<br>Pittsburgh Opera<br>2004</font></p></td></tr></table></center></div>'
+text[number++] = '<td width="210" bgcolor="#000000" valign="top"><div align="center"><center><table cellspacing="5"><tr><td><p><font color="#FFFFFF" size="2"><i>David et Jonathas<br></i>Charpentier<br>Pinchgut Opera<br>2008</font></p></td></tr></table></center></div>'
+text[number++] = '<td width="210" bgcolor="#000000" valign="top"><font color="#FFFFFF" size="1"><br>&nbsp;&nbsp;Photo: Karli Cadel</font><div align="center"><center><table cellspacing="5"><tr><td><p><font color="#FFFFFF" size="2"><i>Der Kaiser von Atlantis<br></i>Ullmann<br>Curtis Institute of Music<br>2013</font></p></td></tr></table></center></div>'
+text[number++] = '<td width="210" bgcolor="#000000" valign="top"><font color="#FFFFFF" size="1"><br>&nbsp;&nbsp;Photo: David Swanson</font><div align="center"><center><table cellspacing="5"><tr><td><p><font color="#FFFFFF" size="2"><i>The Rake&#39;s Progress<br></i>Stravinsky<br>Curtis Institute of Music<br>2002</font></p></td></tr></table></center></div>'
+text[number++] = '<td width="210" bgcolor="#000000" valign="top"><font color="#FFFFFF" size="1"><br>&nbsp;&nbsp;Photo: Dan Rest</font><div align="center"><center><table cellspacing="5"><tr><td><p><font color="#FFFFFF" size="2"><i>Die Entführung aus dem Serail<br></i>Mozart<br>Lyric Opera of Chicago<br>2009</font></p></td></tr></table></center></div>'
+text[number++] = '<td width="210" bgcolor="#000000" valign="top"><font color="#FFFFFF" size="1"><br>&nbsp;&nbsp;Photo: Paul Horpedahl</font><div align="center"><center><table cellspacing="5"><tr><td><p><font color="#FFFFFF" size="2"><i>Don Giovanni<br></i>Mozart<br>Santa Fe Opera<br>2004</font></p></td></tr></table></center></div>'
+text[number++] = '<td width="210" bgcolor="#000000" valign="top"><font color="#FFFFFF" size="1"><br>&nbsp;&nbsp;Photo: Mark Barton</font><div align="center"><center><table cellspacing="5"><tr><td><p><font color="#FFFFFF" size="2"><i>Albert Herring<br></i>Britten<br>Curtis Institute of Music<br>2006</font></p></td></tr></table></center></div>'
+text[number++] = '<td width="210" bgcolor="#000000" valign="top"><font color="#FFFFFF" size="1"><br>&nbsp;&nbsp;Photo: Ken Howard</font><div align="center"><center><table cellspacing="5"><tr><td><p><font color="#FFFFFF" size="2"><i>Una cosa rara<br></i>Martin y Soler<br>Opera Theatre of St. Louis<br>2008</font></p></td></tr></table></center></div>'
+text[number++] = '<td width="210" bgcolor="#000000" valign="top"><font color="#FFFFFF" size="1"><br>&nbsp;&nbsp;Photo: Lenore Doxsee</font><div align="center"><center><table cellspacing="5"><tr><td><p><font color="#FFFFFF" size="2"><i>Flavio<br></i>Handel<br>New York City Opera<br>2007</font></p></td></tr></table></center></div>'
+text[number++] = '<td width="210" bgcolor="#000000" valign="top"><font color="#FFFFFF" size="1"><br>&nbsp;&nbsp;Photo: Ken Howard</font><div align="center"><center><table cellspacing="5"><tr><td><p><font color="#FFFFFF" size="2"><i>Una cosa rara<br></i>Martin y Soler<br>Opera Theatre of St. Louis<br>2008</font></p></td></tr></table></center></div>'
+text[number++] = '<td width="210" bgcolor="#000000" valign="top"><font color="#FFFFFF" size="1"><br>&nbsp;&nbsp;Photo: Cory Weaver</font><div align="center"><center><table cellspacing="5"><tr><td><p><font color="#FFFFFF" size="2"><i>Rinaldo<br></i>Handel<br>Portland Opera and Curtis Institute of Music<br>2013</font></p></td></tr></table></center></div>'
+text[number++] = '<td width="210" bgcolor="#000000" valign="top"><font color="#FFFFFF" size="1"><br>&nbsp;&nbsp;Photo: Cory Weaver</font><div align="center"><center><table cellspacing="5"><tr><td><p><font color="#FFFFFF" size="2"><i>Rinaldo<br></i>Handel<br>Portland Opera and Curtis Institute of Music<br>2013</font></p></td></tr></table></center></div>'
+text[number++] = '<td width="210" bgcolor="#000000" valign="top"><font color="#FFFFFF" size="1"><br>&nbsp;&nbsp;Photo: Pete Checchia</font><div align="center"><center><table cellspacing="5"><tr><td><p><font color="#FFFFFF" size="2"><i>Antony and Cleopatra<br></i>Barber<br>Curtis Institute of Music with Opera Company of Philadelphia and Kimmel Center Presents<br>2010</font></p></td></tr></table></center></div>'
+text[number++] = '<td width="210" bgcolor="#000000" valign="top"><font color="#FFFFFF" size="1"><br>&nbsp;&nbsp;Photo: Mark Barton</font><div align="center"><center><table cellspacing="5"><tr><td><p><font color="#FFFFFF" size="2"><i>Ainadamar<br></i>Golijov<br>Curtis Institute of Music with Opera Company of Philadelphia and Kimmel Center Presents<br>2008</font></p></td></tr></table></center></div>'
+text[number++] = '<td width="210" bgcolor="#000000" valign="top"><div align="center"><center><table cellspacing="5"><tr><td><p><font color="#FFFFFF" size="2"><i>Ainadamar<br></i>Golijov<br>Curtis Institute of Music with Opera Company of Philadelphia and Kimmel Center Presents<br>2008</font></p></td></tr></table></center></div>'
+text[number++] = '<td width="210" bgcolor="#000000" valign="top"><font color="#FFFFFF" size="1"><br>&nbsp;&nbsp;Photo: Claire McAdams</font><div align="center"><center><table cellspacing="5"><tr><td><p><font color="#FFFFFF" size="2"><i>Tolomeo<br></i>Handel<br>Glimmerglass Opera<br>2010</font></p></td></tr></table></center></div>'
+text[number++] = '<td width="210" bgcolor="#000000" valign="top"><font color="#FFFFFF" size="1"><br>&nbsp;&nbsp;Photo: David Zinn</font><div align="center"><center><table cellspacing="5"><tr><td><p><font color="#FFFFFF" size="2"><i>Tamerlano<br></i>Handel<br>Washington National Opera<br>2008</font></p></td></tr></table></center></div>'
+text[number++] = '<td width="210" bgcolor="#000000" valign="top"><div align="center"><center><table cellspacing="5"><tr><td><p><font color="#FFFFFF" size="2"><i>A Wedding<br></i>Bolcom<br>Music Academy of the West<br>2008</font></p></td></tr></table></center></div>'
+text[number++] = '<td width="210" bgcolor="#000000" valign="top"><font color="#FFFFFF" size="1"><br>&nbsp;&nbsp;Photo: Lenore Doxsee</font><div align="center"><center><table cellspacing="5"><tr><td><p><font color="#FFFFFF" size="2"><i>A Wedding<br></i>Bolcom<br>Music Academy of the West<br>2008</font></p></td></tr></table></center></div>'
+text[number++] = '<td width="210" bgcolor="#000000" valign="top"><font color="#FFFFFF" size="1"><br>&nbsp;&nbsp;Photo: Ken Howard</font><div align="center"><center><table cellspacing="5"><tr><td><p><font color="#FFFFFF" size="2"><i>Il Re Pastore<br></i>Mozart<br>Opera Theatre of St. Louis<br>2009</font></p></td></tr></table></center></div>'
+text[number++] = '<td width="210" bgcolor="#000000" valign="top"><font color="#FFFFFF" size="1"><br>&nbsp;&nbsp;Photo: Ken Howard</font><div align="center"><center><table cellspacing="5"><tr><td><p><font color="#FFFFFF" size="2"><i>Il Re Pastore<br></i>Mozart<br>Opera Theatre of St. Louis<br>2009</font></p></td></tr></table></center></div>'
+// ADD MORE TEXT FOR IMAGES HERE
+
+increment = Math.floor(Math.random() * number);
+
+//-->
+</script>
+<title>Chas Rader-Shieber - Stage Director</title>
+</head>
+
+<body bgcolor="#99cc00" text="#FFFFFF" link="#00FFFF" vlink="#FF00FF" alink="#FF0000" topmargin="0" leftmargin="0">
+
+<table border="0" cellpadding="0" cellspacing="0" width="956">
+  <tr>
+    <td width="210" height="67" bgcolor="#000000">&nbsp;</td>
+    <td width="20" bgcolor="#99cc00" height="67">&nbsp;</td>
+    <td width="275" bgcolor="#99cc00" height="67" valign="bottom"><a href="index.htm">
+    <img border="0" src="images/crs_sd.gif" onMouseover="status='Home page'; return true" onMouseout="status=''; return true" width="275" height="67"></a></td>
+    <td width="441" bgcolor="#99cc00" height="67" valign="bottom"><a href="gallery/gallery.htm" onMouseover="img_on('img1'); status='Gallery'; return true" onMouseout="img_normal('img1'); status=''; return true">
+    <img border="0" src="images/gallery.gif" name="img1" width="90" height="33"></a><a href="schedule.htm" onMouseover="img_on('img2'); status='Schedule'; return true" onMouseout="img_normal('img2'); status=''; return true"><img border="0" src="images/schedule.gif" name="img2" width="105" height="33"></a><a href="resume.htm" onMouseover="img_on('img3'); status='Résumé'; return true" onMouseout="img_normal('img3'); status=''; return true"><img border="0" src="images/resume.gif" name="img3" width="84" height="33"></a><a href="contact.htm" onMouseover="img_on('img4'); status='Contact'; return true" onMouseout="img_normal('img4'); status=''; return true"><img border="0" src="images/contact.gif" name="img4" width="97" height="33"></a></td>
+    <td width="10" bgcolor="#99cc00" height="67">&nbsp;</td>
+  </tr>
+  <tr>
+<script LANGUAGE="JavaScript">
+<!--
+// DISPLAY RANDOM IMAGE HERE
+    document.write('<td width="210"><img border="0" src="images/home_'+increment+'_left.jpg" width="210" height="360"></td>')
+    document.write('<td width="736" bgcolor="#99cc00" colspan="4"><img border="0" src="images/home_'+increment+'_right.jpg" width="736" height="360"></td>')
+//-->
+</script>
+  </tr>
+  <tr>
+<script LANGUAGE="JavaScript">
+<!--
+// DISPLAY CORRESPONDING CREDITS HERE
+document.write(text[increment]);
+//-->
+</script>
+      <img border="0" src="images/inv_pixel.gif" width="1" height="300"></td>
+    <td width="736" bgcolor="#99cc00" colspan="4" height="800" valign="top" align="right"><br>
+    <font size="1">&copy; Chas Rader-Shieber&nbsp;&nbsp;&nbsp;&nbsp;</font><p>&nbsp;</p>
+    </td>
+  </tr>
+</table>
+
+</body>
+
+</html>

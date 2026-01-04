@@ -1,0 +1,760 @@
+<html>
+
+<head>
+<script LANGUAGE="JavaScript">
+
+<!--
+
+if (((navigator.appName == "Netscape")
+                        && (parseInt(navigator.appVersion) >= 3 ))
+                        || ((navigator.appName == "Microsoft Internet Explorer")                
+
+                             && (parseInt(navigator.appVersion) >= 4 ))) {
+                             version = "supported";
+                     }
+                             else {
+                             version = "notsupported";
+                     }
+if (version == "supported")
+{
+                        img1on = new Image(90, 33);
+                        img1on.src = "../images/gallery_on.gif";
+                        img1normal = new Image(90, 33);
+                        img1normal.src = "../images/gallery.gif";
+                        img2on = new Image(105, 33);
+                        img2on.src = "../images/schedule_on.gif";
+                        img2normal = new Image(105, 33);
+                        img2normal.src = "../images/schedule.gif";
+                        img3on = new Image(84, 33);
+                        img3on.src = "../images/resume_on.gif";
+                        img3normal = new Image(84, 33);
+                        img3normal.src = "../images/resume.gif";
+                        img4on = new Image(97, 33);
+                        img4on.src = "../images/contact_on.gif";
+                        img4normal = new Image(97, 33);
+                        img4normal.src = "../images/contact.gif";
+                        }
+        function img_on(imgName) {
+                        if (version == "supported") {
+                        imgOn = eval(imgName + "on.src");
+                        document.images [imgName].src = imgOn;
+                        }
+                        }
+        function img_normal(imgName) {
+                        if (version == "supported") {
+                        imgNormal = eval(imgName + "normal.src");
+                        document.images [imgName].src = imgNormal;
+                        }
+}
+
+function text() {
+};
+
+text = new text();
+number = 0;
+
+// TEXT ARRAY
+text[number++] = '<div align="center"><center><table cellspacing="5"><tr><td><p><font color="#FFFFFF" size="2"><i>Apollo e Dafne<br></i> Handel<br>Curtis Institute of Music<br>2011</font></p>'
+text[number++] = '<br><font color="#FFFFFF" size="1">&nbsp;Photo: Karli Cadel&nbsp;</font> <div align="center"><center><table cellspacing="5"><tr><td><p><font color="#FFFFFF" size="2"><i>Die Zauberflöte<br></i> Mozart<br>Curtis Institute of Music<br>2012</font></p>'
+text[number++] = '<br><font color="#FFFFFF" size="1">&nbsp;Photo: Claire McAdams&nbsp;</font> <div align="center"><center><table cellspacing="5"><tr><td><p><font color="#FFFFFF" size="2"><i>Tolomeo<br></i> Handel<br>Glimmerglass Opera<br>2010</font></p>'
+text[number++] = '<br><font color="#FFFFFF" size="1">&nbsp;Photo: Barabara Aumüller&nbsp;</font> <div align="center"><center><table cellspacing="5"><tr><td><p><font color="#FFFFFF" size="2"><i>Die lustige Witwe<br></i> Lehar<br>Staatstheater Darmstadt<br>2011</font></p>'
+text[number++] = '<br><font color="#FFFFFF" size="1">&nbsp;Photo: Paul Horpedahl&nbsp;</font> <div align="center"><center><table cellspacing="5"><tr><td><p><font color="#FFFFFF" size="2"><i>Don Giovanni<br></i> Mozart<br>Santa Fe Opera<br>2004</font></p>'
+text[number++] = '<div align="center"><center><table cellspacing="5"><tr><td><p><font color="#FFFFFF" size="2"><i>Impressions de Pelléas<br></i> Debussy / Constant<br>Curtis Institute of Music<br>1999</font></p>'
+text[number++] = '<br><font color="#FFFFFF" size="1">&nbsp;Photo: Karli Cadel&nbsp;</font> <div align="center"><center><table cellspacing="5"><tr><td><p><font color="#FFFFFF" size="2"><i>Die Zauberflöte<br></i> Mozart<br>Curtis Institute of Music<br>2012</font></p>'
+text[number++] = '<div align="center"><center><table cellspacing="5"><tr><td><p><font color="#FFFFFF" size="2"><i>L&#146;Incoronazione di Poppea<br></i> Monteverdi<br>Pittsburgh Opera Center<br>2001</font></p>'
+text[number++] = '<br><font color="#FFFFFF" size="1">&nbsp;Photo: Ken Howard&nbsp;</font> <div align="center"><center><table cellspacing="5"><tr><td><p><font color="#FFFFFF" size="2"><i>La Clemenza di Tito<br></i> Mozart<br>Santa Fe Opera<br>2002</font></p>'
+text[number++] = '<br><font color="#FFFFFF" size="1">&nbsp;Photo: Dan Rest&nbsp;</font> <div align="center"><center><table cellspacing="5"><tr><td><p><font color="#FFFFFF" size="2"><i>The Cunning Little Vixen<br></i> Janacek<br>Lyric Opera of Chicago<br>2004</font></p>'
+text[number++] = '<br><font color="#FFFFFF" size="1">&nbsp;Photo: Robert Kusel&nbsp;</font> <div align="center"><center><table cellspacing="5"><tr><td><p><font color="#FFFFFF" size="2"><i>The Cunning Little Vixen<br></i> Janacek<br>Lyric Opera of Chicago<br>2004</font></p>'
+text[number++] = '<br><font color="#FFFFFF" size="1">&nbsp;Photo: Karli Cadel&nbsp;</font> <div align="center"><center><table cellspacing="5"><tr><td><p><font color="#FFFFFF" size="2"><i>Rinaldo<br></i> Handel<br>Portland Opera and Curtis Institute of Music<br>2013</font></p>'
+text[number++] = '<br><font color="#FFFFFF" size="1">&nbsp;Photo: Lenore Doxsee&nbsp;</font> <div align="center"><center><table cellspacing="5"><tr><td><p><font color="#FFFFFF" size="2"><i>Le nozze di Figaro<br></i> Mozart<br>Curtis Institute of Music<br>2007</font></p>'
+text[number++] = '<br><font color="#FFFFFF" size="1">&nbsp;Photo: Anna Davidson&nbsp;</font> <div align="center"><center><table cellspacing="5"><tr><td><p><font color="#FFFFFF" size="2"><i>Rinaldo<br></i> Handel<br>Portland Opera and Curtis Institute of Music<br>2013</font></p>'
+text[number++] = '<br><font color="#FFFFFF" size="1">&nbsp;Photo: Dan Rest&nbsp;</font> <div align="center"><center><table cellspacing="5"><tr><td><p><font color="#FFFFFF" size="2"><i>Die Entführung aus dem Serail<br></i> Mozart<br>Lyric Opera of Chicago<br>2009</font></p>'
+text[number++] = '<br><font color="#FFFFFF" size="1">&nbsp;Photo: Dan Rest&nbsp;</font> <div align="center"><center><table cellspacing="5"><tr><td><p><font color="#FFFFFF" size="2"><i>Die Entführung aus dem Serail<br></i> Mozart<br>Lyric Opera of Chicago<br>2009</font></p>'
+text[number++] = '<br><font color="#FFFFFF" size="1">&nbsp;Photo: Dan Rest&nbsp;</font> <div align="center"><center><table cellspacing="5"><tr><td><p><font color="#FFFFFF" size="2"><i>Die Entführung aus dem Serail<br></i> Mozart<br>Lyric Opera of Chicago<br>2009</font></p>'
+text[number++] = '<br><font color="#FFFFFF" size="1">&nbsp;Photo: Ken Howard&nbsp;</font> <div align="center"><center><table cellspacing="5"><tr><td><p><font color="#FFFFFF" size="2"><i>Il Re Pastore<br></i> Mozart<br>Opera Theatre of St. Louis<br>2009</font></p>'
+text[number++] = '<div align="center"><center><table cellspacing="5"><tr><td><p><font color="#FFFFFF" size="2"><i>Antony and Cleopatra<br></i> Barber<br>Curtis Institute<br>2010</font></p>'
+// ADD MORE TEXT FOR IMAGES HERE
+
+increment = Math.floor(Math.random() * number);
+
+//-->
+
+</script>
+<title>Chas Rader-Shieber - Stage Director</title>
+</head>
+
+<body bgcolor="#99cc00" text="#000000" link="#000066" vlink="#000066" alink="#FF0000" topmargin="0" leftmargin="0">
+
+<table border="0" cellpadding="0" cellspacing="0" width="956">
+  <tr>
+    <td width="210" bgcolor="#000000" rowspan="3" valign="top">
+    <script LANGUAGE="JavaScript">
+<!--
+// DISPLAY RANDOM IMAGE HERE
+    document.write('<img border="0" src="../images/v_'+increment+'.jpg" width="210" height="427">');
+	document.write(text[increment]);
+//-->
+	</script>
+	</td></tr></table>
+     </td>
+    <td width="20" bgcolor="#99cc00" height="77" rowspan="3">&nbsp;</td>
+    <td width="275" bgcolor="#99cc00" height="67" valign="bottom"><a href="../index.htm">
+    <img border="0" src="../images/crs_sd.gif" onMouseover="status='Home page'; return true" onMouseout="status=''; return true" width="275" height="67"></a></td>
+    <td width="441" bgcolor="#99cc00" height="67" valign="bottom">
+    <img border="0" src="../images/gallery_on.gif" name="img1" width="90" height="33"><a href="../schedule.htm" onMouseover="img_on('img2'); status='Schedule'; return true" onMouseout="img_normal('img2'); status=''; return true"><img border="0" src="../images/schedule.gif" name="img2" width="105" height="33"></a><a href="../resume.htm" onMouseover="img_on('img3'); status='Résumé'; return true" onMouseout="img_normal('img3'); status=''; return true"><img border="0" src="../images/resume.gif" name="img3" width="84" height="33"></a><a href="../contact.htm" onMouseover="img_on('img4'); status='Contact'; return true" onMouseout="img_normal('img4'); status=''; return true"><img border="0" src="../images/contact.gif" name="img4" width="97" height="33"></a></td>
+    <td width="10" bgcolor="#99cc00" height="77" rowspan="3">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="716" bgcolor="#99cc00" colspan="2" height="10"><img border="0" src="../images/inv_pixel.gif" width="716" height="1"><br></td>
+  </tr>
+  <tr>
+    <td width="716" bgcolor="#99cc00" valign="top" colspan="2" height="800">&nbsp;
+      <table border="0" cellpadding="0" cellspacing="0">
+	    <tr>
+          <td valign="top"><img border="0" src="../images/inv_pixel.gif" hspace="10" width="100" height="100"></td>
+          <td valign="top"></td>
+          <td valign="top" width="40"><img border="0" src="../images/inv_pixel.gif" width="40" height="1"></td>
+          <td valign="top"><b><i><font size="2">
+          <a href="gallery_2015_abduction_01.htm">
+          <img border="0" src="../images/gallery/abduction_2015_01_sm.jpg" hspace="10" alt="Click for gallery photographs" width="100" height="100"></a></font></i></b></td>
+          <td valign="top"><font size="2"><b><i><a href="gallery_2015_abduction_01.htm">The Abduction from the Seraglio</a></i></b><br>Mozart<br>
+            Des Moines Metro Opera<br>
+            2015<br>
+            Scenery: Jacob Climer<br>
+            Costumes: Jacob Climer<br>
+            Lights: Barry Steele</font></td>
+        </tr>
+		<tr>
+          <td valign="top" colspan="5"><img border="0" src="../images/inv_pixel.gif" width="1" height="20">
+          </td>
+        </tr>	  
+	    <tr>
+          <td valign="top"><b><i><font size="2">
+          <a href="gallery_2015_ariadne_01.htm">
+          <img border="0" src="../images/gallery/ariadne_2015_01_sm.jpg" hspace="10" alt="Click for gallery photographs" width="100" height="100"></a></font></i></b></td>
+          <td valign="top"><font size="2"><b><i><a href="gallery_2015_ariadne_01.htm">Ariadne auf Naxos</a></i></b><br>Strauss<br>
+            Curtis Institute of Music<br>
+            2015<br>
+            Scenery: David Zinn<br>
+            Costumes: Jacob Climer<br>
+            Lights:  Mike Inwood</font></td>
+          <td valign="top" width="40"><img border="0" src="../images/inv_pixel.gif" width="40" height="1"></td>
+          <td valign="top"><b><i><font size="2">
+          <a href="gallery_2015_alcina_01.htm">
+          <img border="0" src="../images/gallery/alcina_2015_01_sm.jpg" hspace="10" alt="Click for gallery photographs" width="100" height="100"></a></font></i></b></td>
+          <td valign="top"><font size="2"><b><i><a href="gallery_2015_alcina_01.htm">Alcina</a></i></b><br>
+			Handel<br>
+            Indiana Univesity Opera Theater<br>
+            2015<br>
+            Scenery: Robert Perdziola<br>
+            Costumes: Robert Perdziola<br>
+            Lights: Patrick Mero</font></td>
+        </tr>
+		<tr>
+          <td valign="top" colspan="5"><img border="0" src="../images/inv_pixel.gif" width="1" height="20">
+          </td>
+        </tr>	  		
+	    <tr>
+          <td valign="top"><b><i><font size="2">
+          <a href="gallery_2014_traviata_01.htm">
+          <img border="0" src="../images/gallery/traviata_2014_01_sm.jpg" hspace="10" alt="Click for gallery photographs" width="100" height="100"></a></font></i></b></td>
+          <td valign="top"><font size="2"><b><i><a href="gallery_2014_traviata_01.htm">La Traviata</a></i></b><br>Verdi<br>
+            Boston Lyric Opera<br>
+            2014<br>
+            Scenery: Julia Noulin-Merat<br>
+            Costumes: Jacob Climer<br>
+            Lights: Mike Inwood</font></td>
+          <td valign="top" width="40"><img border="0" src="../images/inv_pixel.gif" width="40" height="1"></td>
+          <td valign="top"><b><i><font size="2">
+          <a href="gallery_2013_kaiser_01.htm">
+          <img border="0" src="../images/gallery/kaiser_2013_01_sm.jpg" hspace="10" alt="Click for gallery photographs" width="100" height="100"></a></font></i></b></td>
+          <td valign="top"><font size="2"><b><i><a href="gallery_2013_kaiser_01.htm">Der Kaiser vin Atlantis</a></i></b><br>
+			Ullmann<br>
+            Curtis Institute of Music<br>
+            2013<br>
+            Lights: Lenore Doxsee</font></td>
+        </tr>
+		<tr>
+          <td valign="top" colspan="5"><img border="0" src="../images/inv_pixel.gif" width="1" height="20">
+          </td>
+        </tr>	  
+	    <tr>
+          <td valign="top"><b><i><font size="2">
+          <a href="gallery_2013_rinaldo_01.htm">
+          <img border="0" src="../images/gallery/rinaldo_2013_01_sm.jpg" hspace="10" alt="Click for gallery photographs" width="100" height="100"></a></font></i></b></td>
+          <td valign="top"><font size="2"><b><i><a href="gallery_2013_rinaldo_01.htm">Rinaldo</a></i></b><br>
+			Handel<br>
+            Portland Opera<br>
+            2013<br>
+            Scenery: Jacob Climer<br>
+            Costumes: Jacob Climer<br>
+            Lights:  Mike Inwood</font></td>
+          <td valign="top" width="40"><img border="0" src="../images/inv_pixel.gif" width="40" height="1"></td>
+          <td valign="top"><b><i><font size="2">
+          <a href="gallery_2012_flute_01.htm">
+          <img border="0" src="../images/gallery/flute_2012_01_sm.jpg" hspace="10" alt="Click for gallery photographs" width="100" height="100"></a></font></i></b></td>
+          <td valign="top"><font size="2"><b><i><a href="gallery_2012_flute_01.htm">Die Zauberflöte</a></i></b><br>
+			Mozart<br>
+            Curtis Institute of Music<br>
+            2012<br>
+            Scenery: Andrew Boyce<br>
+            Costumes: Andrew Boyce<br>
+            Lights:  Mark Barton</font></td>
+        </tr>
+		<tr>
+          <td valign="top" colspan="5"><img border="0" src="../images/inv_pixel.gif" width="1" height="20">
+          </td>
+        </tr>	  		
+	    <tr>
+          <td valign="top"><b><i><font size="2">
+          <a href="gallery_2011_widow_01.htm">
+          <img border="0" src="../images/gallery/widow_2011_01_sm.jpg" hspace="10" alt="Click for gallery photographs" width="100" height="100"></a></font></i></b></td>
+          <td valign="top"><font size="2"><b><i><a href="gallery_2011_widow_01.htm">Die lustige Witwe</a></i></b><br>
+			Lehar<br>
+            Staatstheater Darmstadt<br>
+            2011<br>
+            Scenery: David Zinn<br>
+            Costumes: David Zinn<br>
+            Choreography: Beate Vollack</font></td>
+          <td valign="top" width="40"><img border="0" src="../images/inv_pixel.gif" width="40" height="1"></td>
+          <td valign="top"><b><i><font size="2">
+          <a href="gallery_2011_apollo_01.htm">
+          <img border="0" src="../images/gallery/apollo_2011_01_sm.jpg" hspace="10" alt="Click for gallery photographs" width="100" height="100"></a></font></i></b></td>
+          <td valign="top"><font size="2"><b><i><a href="gallery_2011_apollo_01.htm">Apollo e Dafne</a></i></b><br>
+			Handel<br>
+            Curtis Institute of Music<br>
+            2011<br>
+            Lights: Christopher J. Frey</font></td>
+        </tr>
+		<tr>
+          <td valign="top" colspan="5"><img border="0" src="../images/inv_pixel.gif" width="1" height="20">
+          </td>
+        </tr>	  
+	    <tr>
+          <td valign="top"><b><i><font size="2">
+          <a href="gallery_2011_missd_01.htm">
+          <img border="0" src="../images/gallery/missd_2011_01_sm.jpg" hspace="10" alt="Click for gallery photographs" width="100" height="100"></a></font></i></b></td>
+          <td valign="top"><font size="2"><b><i><a href="gallery_2011_missd_01.htm">Miss Donnithorne's Maggot</a></i></b><br>
+			Davies<br>
+            Curtis Institute of Music<br>
+            2011<br>
+            Lights: Christopher J. Frey</font></td>
+          <td valign="top" width="40"><img border="0" src="../images/inv_pixel.gif" width="40" height="1"></td>
+          <td valign="top"><b><i><font size="2">
+          <a href="gallery_2010_tolomeo_01.htm">
+          <img border="0" src="../images/gallery/tolomeo_2010_01_sm.jpg" hspace="10" alt="Click for gallery photographs" width="100" height="100"></a></font></i></b></td>
+          <td valign="top"><font size="2"><b><i><a href="gallery_2010_tolomeo_01.htm">Tolomeo</a></i></b><br>
+			Handel<br>
+            Glimmerglass Opera<br>
+            2010<br>
+            Scenery: Donald Eastman<br>
+            Costumes: Andrea Hood<br>
+            Lights: Robert Wierzel</font></td>
+        </tr>		
+		<tr>
+          <td valign="top" colspan="5"><img border="0" src="../images/inv_pixel.gif" width="1" height="20">
+          </td>
+        </tr>	  
+	    <tr>
+          <td valign="top"><b><i><font size="2">
+          <a href="gallery_2010_antony_01.htm">
+          <img border="0" src="../images/gallery/antony_2010_01_sm.jpg" hspace="10" alt="Click for gallery photographs" width="100" height="100"></a></font></i></b></td>
+          <td valign="top"><font size="2"><b><i><a href="gallery_2010_antony_01.htm">Antony and Cleopatra</a></i></b><br>
+			Barber<br>
+            Curtis Institute of Music<br>
+            2010<br>
+            Scenery: David Zinn<br>
+            Costumes: Jacob Climer<br>
+            Lights: Lenore Doxsee</font></td>
+          <td valign="top" width="40"><img border="0" src="../images/inv_pixel.gif" width="40" height="1"></td>
+          <td valign="top"><b><i><font size="2">
+          <a href="gallery_2009_pastore_01.htm">
+          <img border="0" src="../images/gallery/pastore_2009_01_sm.jpg" hspace="10" alt="Click for gallery photographs" width="100" height="100"></a></font></i></b></td>
+          <td valign="top"><font size="2"><b><i><a href="gallery_2009_pastore_01.htm">Il Re Pastore</a></i></b><br>
+			Mozart<br>
+            Opera Theatre of St. Louis<br>
+            2009<br>
+            Scenery: David Zinn<br>
+            Costumes: Robert Perdziola<br>
+            Lights: Paul Palazzo</font></td>
+        </tr>		
+		<tr>
+          <td valign="top" colspan="5"><img border="0" src="../images/inv_pixel.gif" width="1" height="20">
+          </td>
+        </tr>
+	    <tr>
+          <td valign="top"><b><i><font size="2">
+          <a href="gallery_2009_viaggio_01.htm">
+          <img border="0" src="../images/gallery/viaggio_2009_01_sm.jpg" hspace="10" alt="Click for gallery photographs" width="100" height="100"></a></font></i></b></td>
+          <td valign="top"><font size="2"><b><i><a href="gallery_2009_viaggio_01.htm">Il Viaggio a Reims</a></i></b><br>
+			Rossini<br>
+            Curtis Institute of Music<br>
+            2009<br>
+            Scenery: Judy Gailen<br>
+            Costumes: Clint Ramos<br>
+            Lights: Lenore Doxsee</font></td>
+          <td valign="top" width="40"><img border="0" src="../images/inv_pixel.gif" width="40" height="1"></td>
+          <td valign="top"><b><i><font size="2">
+          <a href="gallery_2009_abduction_01.htm">
+          <img border="0" src="../images/gallery/abduction_2009_01_sm.jpg" hspace="10" alt="Click for gallery photographs" width="100" height="100"></a></font></i></b></td>
+          <td valign="top"><font size="2"><b><i><a href="gallery_2009_abduction_01.htm">Die Entführung aus dem Serail</a></i></b><br>
+			Mozart<br>
+            Lyric Opera of Chicago<br>
+            2009<br>
+            Scenery: David Zinn<br>
+            Costumes: David Zinn<br>
+            Lights: Christopher Akerlind</font></td>
+        </tr>		
+		<tr>
+          <td valign="top" colspan="5"><img border="0" src="../images/inv_pixel.gif" width="1" height="20">
+          </td>
+        </tr>
+	    <tr>
+          <td valign="top"><b><i><font size="2">
+          <a href="gallery_2008_dandj_01.htm">
+          <img border="0" src="../images/gallery/dandj_2008_01_sm.jpg" hspace="10" alt="Click for gallery photographs" width="100" height="100"></a></font></i></b></td>
+          <td valign="top"><font size="2"><b><i><a href="gallery_2008_dandj_01.htm">David et Jonathas</a></i></b><br>
+			Charpentier<br>
+            Pinchgut Opera<br>
+            2008<br>
+            Scenery and Costumes:<br>Brad Clark and Alexandra Sommer<br>
+            Lights: Bernie Tan-Hayes</font></td>
+          <td valign="top" width="40"><img border="0" src="../images/inv_pixel.gif" width="40" height="1"></td>
+          <td valign="top"><b><i><font size="2">
+          <a href="gallery_2008_wedding_01.htm">
+          <img border="0" src="../images/gallery/wedding_2008_01_sm.jpg" hspace="10" alt="Click for gallery photographs" width="100" height="100"></a></font></i></b></td>
+          <td valign="top"><font size="2"><b><i><a href="gallery_2008_wedding_01.htm">A Wedding</a></i></b><br>
+			Bolcom<br>
+            Music Academy of the West<br>
+            2008<br>
+            Scenery: David Zinn<br>
+            Costumes: David Zinn<br>
+            Lights: Lenore Doxsee</font></td>
+        </tr>
+		<tr>
+          <td valign="top" colspan="5"><img border="0" src="../images/inv_pixel.gif" width="1" height="20">
+          </td>
+        </tr>
+	    <tr>
+          <td valign="top"><b><i><font size="2">
+          <a href="gallery_2008_cosarara_01.htm">
+          <img border="0" src="../images/gallery/cosarara_2008_01_sm.jpg" hspace="10" alt="Click for gallery photographs" width="100" height="100"></a></font></i></b></td>
+          <td valign="top"><font size="2"><b><i><a href="gallery_2008_cosarara_01.htm">Una cosa rara</a></i></b><br>
+			Martin y Soler<br>
+            Opera Theatre of St. Louis<br>
+            2008<br>
+            Scenery: David Zinn<br>
+            Costumes: Clint Ramos<br>
+            Lights: Mark McCollough</font></td>
+          <td valign="top" width="40"><img border="0" src="../images/inv_pixel.gif" width="40" height="1"></td>
+          <td valign="top"><b><i><font size="2">
+          <a href="gallery_2008_tamerlano_01.htm">
+          <img border="0" src="../images/gallery/tamerlano_2008_01_sm.jpg" hspace="10" alt="Click for gallery photographs" width="100" height="100"></a></font></i></b></td>
+          <td valign="top"><font size="2"><b><i><a href="gallery_2008_tamerlano_01.htm">Tamerlano</a></i></b><br>
+			Handel<br>
+            Washington National Opera<br>
+            2008<br>
+            Scenery: David Zinn<br>
+            Costumes: David Zinn<br>
+            Lights: Christopher Akerlind</font></td>
+        </tr>
+		<tr>
+          <td valign="top" colspan="5"><img border="0" src="../images/inv_pixel.gif" width="1" height="20">
+          </td>
+        </tr>
+	    <tr>
+          <td valign="top"><b><i><font size="2">
+          <a href="gallery_2008_ainadamar_01.htm">
+          <img border="0" src="../images/gallery/ainadamar_2008_01_sm.jpg" hspace="10" alt="Click for gallery photographs" width="100" height="100"></a></font></i></b></td>
+          <td valign="top"><font size="2"><b><i><a href="gallery_2008_ainadamar_01.htm">Ainadamar</a></i></b><br>
+			Golijov<br>
+            Curtis Institute of Music<br>
+            2008<br>
+            Scenery: David Zinn<br>
+            Costumes: Richard St. Clair<br>
+            Lights: Mark Barton</font></td>
+          <td valign="top" width="40"><img border="0" src="../images/inv_pixel.gif" width="40" height="1"></td>
+          <td valign="top"><b><i><font size="2">
+          <a href="gallery_2007_figaro_01.htm">
+          <img border="0" src="../images/gallery/figaro_2007_01_sm.jpg" hspace="10" alt="Click for gallery photographs" width="100" height="100"></a></font></i></b></td>
+          <td valign="top"><font size="2"><b><i><a href="gallery_2007_figaro_01.htm">Le nozze di Figaro</a></i></b><br>
+			Mozart<br>
+            Curtis Institute of Music<br>
+            2007<br>
+            Scenery: Nicholas Vaughan<br>
+            Costumes: Jessica Trejos<br>
+            Lights: Lenore Doxsee</font></td>
+        </tr>
+		<tr>
+          <td valign="top" colspan="5"><img border="0" src="../images/inv_pixel.gif" width="1" height="20">
+          </td>
+        </tr>
+        <tr>
+          <td valign="top"><b><i><font size="2">
+          <a href="gallery_2007_puritani_01.htm">
+          <img border="0" src="../images/gallery/puritani_2007_01_sm.jpg" hspace="10" alt="Click for gallery photographs" width="100" height="100"></a></font></i></b></td>
+          <td valign="top"><font size="2"><b><i><a href="gallery_2007_puritani_01.htm">I Puritani</a></i></b><br>
+			Bellini<br>
+            Opera Theatre of St. Louis<br>
+            2007<br>
+            Scenery: Allen Moyer<br>
+            Costumes: David Zinn<br>
+            Lights: Mark McCullough</font></td>
+          <td valign="top" width="40"><img border="0" src="../images/inv_pixel.gif" width="40" height="1"></td>
+          <td valign="top"><b><i><font size="2">
+          <a href="gallery_2006_lago_01.htm">
+          <img border="0" src="../images/gallery/lago_2006_01_sm.jpg" hspace="10" alt="Click for gallery photographs" width="100" height="100"></a></font></i></b></td>
+          <td valign="top"><font size="2"><b><i><a href="gallery_2006_lago_01.htm">La donna del lago</a></i></b><br>
+			Rossini<br>
+            The Minnesota Opera<br>
+            2006<br>
+            Scenery: David Zinn<br>
+            Costumes: David Zinn<br>
+            Lights: Lenore Doxsee</font></td>
+        </tr>
+		<tr>
+          <td valign="top" colspan="5"><img border="0" src="../images/inv_pixel.gif" width="1" height="20">
+          </td>
+        </tr>
+        <tr>
+          <td valign="top"><b><i><font size="2">
+          <a href="gallery_2006_herring_01.htm">
+          <img border="0" src="../images/gallery/herring_2006_01_sm.jpg" hspace="10" alt="Click for gallery photographs" width="100" height="100"></a></font></i></b></td>
+          <td valign="top"><font size="2"><b><i><a href="gallery_2006_herring_01.htm">Albert Herring</a></i></b><br>
+			Britten<br>
+            Curtis Institute of Music<br>
+            2006<br>
+            Scenery: David Zinn<br>
+            Costumes: Richard St. Clair<br>
+            Lights: Mark Barton</font></td>
+          <td valign="top" width="40"><img border="0" src="../images/inv_pixel.gif" width="40" height="1"></td>
+          <td valign="top"><b><i><font size="2">
+          <a href="gallery_2006_semele_01.htm">
+          <img border="0" src="../images/gallery/semele_2006_01_sm.jpg" hspace="10" alt="Click for gallery photographs" width="100" height="100"></a></font></i></b></td>
+          <td valign="top"><font size="2"><b><i><a href="gallery_2006_semele_01.htm">Semele</a></i></b><br>
+			Handel<br>
+            Arizona Opera<br>
+            2006<br>
+            Scenery: David Zinn<br>
+            Costumes: David Zinn<br>
+            Lights: Lenore Doxsee</font></td>
+        </tr>
+		<tr>
+          <td valign="top" colspan="5"><img border="0" src="../images/inv_pixel.gif" width="1" height="20">
+          </td>
+        </tr>
+        <tr>
+          <td valign="top"><b><i><font size="2">
+          <a href="gallery_2005_cosi_01.htm">
+          <img border="0" src="../images/gallery/cosi_2005_01_sm.jpg" hspace="10" alt="Click for gallery photographs" width="100" height="100"></a></font></i></b></td>
+          <td valign="top"><font size="2"><b><i><a href="gallery_2005_cosi_01.htm">Così
+            fan tutte</a></i></b><br>
+			Mozart<br>
+            Music Academy of the West<br>
+            2005<br>
+            Scenery: David Zinn<br>
+            Costumes: David Zinn<br>
+            Lights: Lenore Doxsee</font></td>
+          <td valign="top" width="40"><img border="0" src="../images/inv_pixel.gif" width="40" height="1"></td>
+          <td valign="top"><b><i><font size="2">
+          <a href="gallery_2005_alcina_01.htm">
+          <img border="0" src="../images/gallery/alcina_2005_01_sm.jpg" hspace="10" alt="Click for gallery photographs" width="100" height="100"></a></font></i></b></td>
+          <td valign="top"><font size="2"><b><i><a href="gallery_2005_alcina_01.htm">Alcina</a></i></b><br>
+			Handel<br>
+            Curtis Institute of Music<br>
+            2005<br>
+            Scenery: David Zinn<br>
+            Costumes: David Zinn<br>
+            Lights: Lenore Doxsee</font></td>
+        </tr>
+		<tr>
+          <td valign="top" colspan="5"><img border="0" src="../images/inv_pixel.gif" width="1" height="20">
+          </td>
+        </tr>
+        <tr>
+          <td valign="top"><b><i><font size="2">
+          <a href="gallery_2004_vixen_06.htm">
+          <img border="0" src="../images/gallery/vixen_2004_06_sm.jpg" hspace="10" alt="Click for gallery photographs" width="100" height="100"></a></font></i></b></td>
+          <td valign="top"><font size="2"><b><i>
+          <a href="gallery_2004_vixen_06.htm">The Cunning Little Vixen</a></i></b><br>
+			Janacek<br>
+            Lyric Opera of Chicago<br>
+          2004<br>
+            Scenery: David Zinn<br>
+            Costumes: David Zinn<br>
+            Lights: Lenore Doxsee</font></td>
+          <td valign="top" width="40"><img border="0" src="../images/inv_pixel.gif" width="40" height="1"></td>
+          <td valign="top"><b><i><font size="2">
+          <a href="gallery_2004_giovanni_11.htm">
+          <img border="0" src="../images/gallery/giovanni_2004_11_sm.jpg" hspace="10" alt="Click for gallery photographs" width="100" height="100"></a></font></i></b></td>
+          <td valign="top"><font size="2"><b><i>
+          <a href="gallery_2004_giovanni_01.htm">Don Giovanni</a></i></b><br>
+			Mozart<br>
+            Santa Fe Opera<br>
+          2004<br>
+            Scenery: David Zinn<br>
+            Costumes: David Zinn<br>
+            Lights: Duane Schuler</font></td>
+          </tr>
+        <tr>
+          <td valign="top" colspan="5"><img border="0" src="../images/inv_pixel.gif" width="1" height="20">
+          </td>
+        </tr>
+        <tr>
+          <td valign="top"><b><i><font size="2">
+          <a href="gallery_2004_giulio_01.htm">
+          <img border="0" src="../images/gallery/giulio_2004_01_sm.jpg" hspace="10" alt="Click for gallery photographs" width="100" height="100"></a></font></i></b></td>
+          <td valign="top"><font size="2"><a href="gallery_2004_giulio_01.htm">
+          <b><i>Giulio Cesare</i></b></a><br>
+			Handel<br>
+            Pittsburgh Opera<br>
+          2004<br>
+            Scenery: David Zinn<br>
+            Costumes: David Zinn<br>
+            Lights: Lenore Doxsee</font></td>
+          <td valign="top" width="40"><img border="0" src="../images/inv_pixel.gif" width="40" height="1"></td>
+          <td valign="top"><b><i><font size="2">
+          <a href="gallery_2003_julie_01.htm">
+          <img border="0" src="../images/gallery/julie_2003_01_sm.jpg" hspace="10" alt="Click for gallery photographs" width="100" height="100"></a></font></i></b></td>
+          <td valign="top"><font size="2"><a href="gallery_2003_julie_01.htm">
+          <b><i>Miss Julie</i></b></a><br>
+			Rorem<br>
+          Curtis Institute of Music<br>
+            2003<br>
+            Scenery: David Zinn<br>
+            Costumes: David Zinn<br>
+            Lights: Lenore Doxsee</font></td>
+          </tr>
+        <tr>
+          <td valign="top" colspan="5"><img border="0" src="../images/inv_pixel.gif" width="1" height="20">
+          </td>
+        </tr>
+        <tr>
+          <td valign="top"><b><i><font size="2">
+          <a href="gallery_2003_orlando_01.htm">
+          <img border="0" src="../images/gallery/orlando_2003_01_sm.jpg" hspace="10" alt="Click for gallery photographs" width="100" height="100"></a></font></i></b></td>
+          <td valign="top"><font size="2"><b><i>
+          <a href="gallery_2003_orlando_01.htm">Orlando</a></i></b><br>
+			Handel<br>
+            Glimmerglass Opera<br>
+            2003<br>
+            Scenery: David Zinn<br>
+            Costumes: David Zinn<br>
+            Lights: Lenore Doxsee</font></td>
+          <td valign="top" width="40"><img border="0" src="../images/inv_pixel.gif" width="40" height="1"></td>
+          <td valign="top"><b><i><font size="2">
+          <a href="gallery_2003_tamerlano_01.htm">
+          <img border="0" src="../images/gallery/tamerlano_2003_01_sm.jpg" hspace="10" alt="Click for gallery photographs" width="100" height="100"></a></font></i></b></td>
+          <td valign="top"><font size="2"><b><i>
+          <a href="gallery_2003_tamerlano_01.htm">Tamerlano</a></i></b><br>
+			Handel<br>
+            Spoleto Festival USA<br>
+            2003<br>
+            Scenery: David Zinn<br>
+            Costumes: David Zinn<br>
+            Lights: Lenore Doxsee</font></td>
+        </tr>
+        <tr>
+          <td valign="top" colspan="5"><img border="0" src="../images/inv_pixel.gif" width="1" height="20">
+          </td>
+        </tr>
+        <tr>
+          <td valign="top"><b><i><font size="2">
+          <a href="gallery_2003_flavio_01.htm">
+          <img border="0" src="../images/gallery/flavio_2003_01_sm.jpg" hspace="10" alt="Click for gallery photographs" width="100" height="100"></a></font></i></b> 
+          </td>
+          <td valign="top"><font size="2"><b><i>
+          <a href="gallery_2003_flavio_01.htm">Flavio</a></i></b><a href="gallery_2002_rakes_01.htm"><b><i><br>
+            </i></b>
+            </a>Handel<br>
+            New York City Opera<br>
+            2003<br>
+            Scenery: David Zinn<br>
+            Costumes: David Zinn<br>
+            Lights: Lenore Doxsee</font></td>
+          <td valign="top" width="40"><img border="0" src="../images/inv_pixel.gif" width="40" height="1"></td>
+          <td valign="top"><b><i><a href="gallery_2002_tito_01.htm"><font size="2">
+          <img border="0" src="../images/gallery/tito_2002_01_sm.jpg" hspace="10" alt="Click for gallery photographs" width="100" height="100"></font></a></i></b>
+          </td>
+          <td valign="top"><b><i><a href="gallery_2002_tito_01.htm"><font size="2">La Clemenza di Tito<br>
+            </font>
+            </a></i></b><font size="2">Mozart<br>
+            Santa Fe Opera<br>
+            2002<br>
+            Scenery: David Zinn<br>
+            Costumes: David Zinn<br>
+            Lights: Rick Fisher</font></td>
+        </tr>
+        <tr>
+          <td valign="top" colspan="5"><img border="0" src="../images/inv_pixel.gif" width="1" height="20">
+          </td>
+        </tr>
+        <tr>
+          <td valign="top"><b><i><font size="2"><a href="gallery_2002_rakes_01.htm">
+          <img border="0" src="../images/gallery/rakes_2002_01_sm.jpg" hspace="10" alt="Click for gallery photographs" width="100" height="100"></a></font></i></b> 
+          </td>
+          <td valign="top"><font size="2"><b><i><a href="gallery_2002_rakes_01.htm">The
+            Rake's Progress<br>
+            </a></i></b>Stravinsky<br>
+            Curtis Institute of Music<br>
+            2002<br>
+            Scenery: David Morris<br>
+            Costumes: Susan Denning<br>
+            Lights: Lenore Doxsee</font></td>
+          <td valign="top" width="40"><img border="0" src="../images/inv_pixel.gif" width="40" height="1"></td>
+          <td valign="top"><b><i><a href="gallery_2001_poppea_01.htm"><font size="2">
+          <img border="0" src="../images/gallery/poppea_2001_01_sm.jpg" hspace="10" alt="Click for gallery photographs" width="100" height="100"></font></a></i></b> 
+          </td>
+          <td valign="top"><font size="2"><b><i><a href="gallery_2001_poppea_01.htm">L'Incoronazione
+            di Poppea<br>
+            </a></i></b>Monteverdi<br>
+            Pittsburgh Opera Center<br>
+            2001<br>
+            Scenery: David Zinn<br>
+            Costumes: David Zinn<br>
+            Lights: Lenore Doxsee</font></td>
+        </tr>
+        <tr>
+          <td valign="top" colspan="5"><img border="0" src="../images/inv_pixel.gif" width="1" height="20">
+          </td>
+        </tr>
+        <tr>
+          <td valign="top"><b><i><font size="2">
+          <a href="gallery_2001_pasquale_01.htm">
+          <img border="0" src="../images/gallery/pasquale_2001_01_sm.jpg" hspace="10" alt="Click for gallery photographs" width="100" height="100"></a></font></i></b> 
+          </td>
+          <td valign="top"><font size="2"><i><b><a href="gallery_2001_pasquale_01.htm">Don
+            Pasquale<br>
+            </a></b></i>Donizetti<br>
+            Music Academy of the West<br>
+            2001<br>
+            Scenery: David Zinn<br>
+            Costumes: David Zinn<br>
+            Lights: Lenore Doxsee</font></td>
+          <td valign="top" width="40"><img border="0" src="../images/inv_pixel.gif" width="20" height="1"></td>
+          <td valign="top"><b><i><a href="gallery_2000_ariadne_01.htm"><font size="2">
+          <img border="0" src="../images/gallery/ariadne_2000_01_sm.jpg" hspace="10" alt="Click for gallery photographs" width="100" height="100"></font></a></i></b> 
+          </td>
+          <td valign="top"><font size="2"><b><i><a href="gallery_2000_ariadne_01.htm">Ariadne
+            auf Naxos<br>
+            </a></i></b>Strauss<br>
+            Music Academy of the West<br>
+            2000<br>
+            Scenery: David Zinn<br>
+            Costumes: David Zinn<br>
+            Lights: Lenore Doxsee</font></td>
+        </tr>
+        <tr>
+          <td valign="top" colspan="5"><img border="0" src="../images/inv_pixel.gif" width="1" height="20">
+          </td>
+        </tr>
+        <tr>
+          <td valign="top"><b><i><a href="gallery_1999_armide_01.htm"><font size="2">
+          <img border="0" src="../images/gallery/armide_1999_01_sm.jpg" hspace="10" alt="Click for gallery photographs" width="100" height="100"></font></a></i></b> 
+          </td>
+          <td valign="top"><font size="2"><i><b><a href="gallery_1999_armide_01.htm">Armide<br>
+            </a></b></i>Gluck<br>
+            Juilliard Opera Center<br>
+            1999<br>
+            Scenery: David Zinn<br>
+            Costumes: David Zinn<br>
+            Lights: Lenore Doxsee</font></td>
+          <td valign="top" width="40"><img border="0" src="../images/inv_pixel.gif" width="20" height="1"></td>
+          <td valign="top"><b><i><a href="gallery_1999_impressions_01.htm"><font size="2">
+          <img border="0" src="../images/gallery/impressions_1999_01_sm.jpg" hspace="10" alt="Click for gallery photographs" width="100" height="100"></font></a></i></b> 
+          </td>
+          <td valign="top"><font size="2"><i><b><a href="gallery_1999_impressions_01.htm">Impressions
+            de Pelléas<br>
+            </a></b></i>Debussy / Constant<br>
+            Curtis Institute of Music<br>
+            1999<br>
+            Scenery: Chas Rader-Shieber<br>
+            Costumes: Chas Rader-Shieber<br>
+            Lights: Allan Hahn</font></td>
+        </tr>
+        <tr>
+          <td valign="top" colspan="5"><img border="0" src="../images/inv_pixel.gif" width="1" height="20">
+          </td>
+        </tr>
+        <tr>
+          <td valign="top"><b><i><a href="gallery_1995_partenope_01.htm"><font size="2">
+          <img border="0" src="../images/gallery/partenope_1995_01_sm.jpg" hspace="10" alt="Click for gallery photographs" width="100" height="100"></font></a></i></b> 
+          </td>
+          <td valign="top"><font size="2"><i><b><a href="gallery_1995_partenope_01.htm">Partenope<br>
+            </a></b></i>Handel<br>
+            Skylight Opera Theatre<br>
+            1995<br>
+            Scenery: David Zinn<br>
+            Costumes: David Zinn<br>
+            Lights: Lenore Doxsee</font></td>
+          <td valign="top" width="40"><img border="0" src="../images/inv_pixel.gif" width="20" height="1"></td>
+          <td valign="top"><b><i><a href="gallery_1994_onegin_01.htm"><font size="2">
+          <img border="0" src="../images/gallery/onegin_1994_01_sm.jpg" hspace="10" alt="Click for gallery photographs" width="100" height="100"></font></a></i></b> 
+          </td>
+          <td valign="top"><font size="2"><i><b><a href="gallery_1994_onegin_01.htm">Eugene Onegin<br>
+            </a></b></i>Tchaikovsky<br>
+            Skylight Opera Theatre<br>
+            1994<br>
+            Scenery: Robert Perdziola<br>
+            Costumes: Robert Perdziola<br>
+            Lights: John Lasiter</font></td>
+        </tr>
+        <tr>
+          <td valign="top" colspan="5"><img border="0" src="../images/inv_pixel.gif" width="1" height="20">
+          </td>
+        </tr>
+        <tr>
+          <td valign="top"><b><i><font size="2"><a href="gallery_1993_flute_01.htm">
+          <img border="0" src="../images/gallery/flute_1993_01_sm.jpg" hspace="10" alt="Click for gallery photographs" width="100" height="100"></a></font></i></b> 
+          </td>
+          <td valign="top"><font size="2"><b><i><a href="gallery_1993_flute_01.htm">Die
+            Zauberflöte<br>
+            </a></i></b>Mozart<br>
+            Skylight Opera Theatre<br>
+            1993<br>
+            Scenery: David Birn<br>
+            Costumes: David Zinn<br>
+            Lights: Christopher Akerlind</font></td>
+          <td valign="top" width="40"><img border="0" src="../images/inv_pixel.gif" width="20" height="1"></td>
+          <td valign="top"><b><i><font size="2"><a href="gallery_1993_giovanni_01.htm">
+          <img border="0" src="../images/gallery/giovanni_1993_01_sm.jpg" hspace="10" alt="Click for gallery photographs" width="100" height="100"></a></font></i></b> 
+          </td>
+          <td valign="top"><font size="2"><i><b><a href="gallery_1993_giovanni_01.htm">Don Giovanni<br>
+            </a></b></i>Mozart<br>
+            ECOVA<br>
+            1993<br>
+            Scenery: Sven Use<br>
+            Costumes: Sven Use<br>
+            Lights: Benny Ball</font></td>
+        </tr>
+        <tr>
+          <td valign="top" colspan="5"><img border="0" src="../images/inv_pixel.gif" width="1" height="20">
+          </td>
+        </tr>
+        <tr>
+          <td valign="top"><b><i><a href="gallery_1993_pelleas_01.htm"><font size="2">
+          <img border="0" src="../images/gallery/pelleas_1993_01_sm.jpg" hspace="10" alt="Click for gallery photographs" width="100" height="100"></font></a></i></b> 
+          </td>
+          <td valign="top"><font size="2"><i><b><a href="gallery_1993_pelleas_01.htm">Pelléas
+            et Mélisande<br>
+            </a></b></i>Debussy<br>
+            Skylight Opera Theatre<br>
+            1993<br>
+            Scenery: Deb Booth<br>
+            Costumes: Tom Broeker<br>
+            Lights: Christopher Akerlind</font></td>
+          <td valign="top" width="40"><img border="0" src="../images/inv_pixel.gif" width="20" height="1"></td>
+          <td valign="top"> 
+          </td>
+          <td valign="top"></td>
+        </tr>
+        <tr>
+          <td valign="top" colspan="5"><img border="0" src="../images/inv_pixel.gif" width="1" height="20">
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+
+</body>
+
