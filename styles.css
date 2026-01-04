@@ -1,0 +1,845 @@
+/* ===========================================
+   Chas Rader-Shieber Website
+   Modern CSS - Visual parity with original
+   =========================================== */
+
+/* CSS Custom Properties */
+:root {
+  --color-bg: #99cc00;
+  --color-black: #000000;
+  --color-white: #ffffff;
+  --color-text: #000000;
+  --color-link: #000066;
+  
+  --width-sidebar: 210px;
+  --width-site: 956px;
+  --width-logo: 275px;
+  --width-spacer: 20px;
+  
+  --height-header: 67px;
+  --height-nav-btn: 33px;
+}
+
+/* Reset & Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: Times, "Times New Roman", serif;
+  line-height: 1.4;
+}
+
+a {
+  color: var(--color-link);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* ===========================================
+   Layout Structure
+   =========================================== */
+.site-container {
+  width: var(--width-site);
+  margin: 0;
+  display: grid;
+  grid-template-columns: var(--width-sidebar) var(--width-spacer) 1fr var(--width-spacer);
+  grid-template-rows: var(--height-header) auto auto;
+  grid-template-areas:
+    "sidebar spacer-left header spacer-right"
+    "sidebar spacer-left main   spacer-right"
+    "sidebar spacer-left footer spacer-right";
+}
+
+/* ===========================================
+   Sidebar (Left Black Column)
+   =========================================== */
+.sidebar {
+  grid-area: sidebar;
+  background-color: var(--color-black);
+  color: var(--color-white);
+  min-height: 100vh;
+}
+
+.sidebar-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.sidebar-caption {
+  padding: 10px;
+  font-size: 12px;
+}
+
+.sidebar-caption .photo-credit {
+  font-size: 10px;
+  margin-bottom: 8px;
+}
+
+.sidebar-caption p {
+  text-align: center;
+  font-size: 13px;
+}
+
+.sidebar-caption i {
+  font-style: italic;
+}
+
+/* ===========================================
+   Header & Navigation
+   =========================================== */
+.header {
+  grid-area: header;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding-bottom: 0;
+}
+
+.logo {
+  display: block;
+  width: var(--width-logo);
+  height: var(--height-header);
+  text-decoration: none;
+}
+
+.logo:hover {
+  text-decoration: none;
+}
+
+.logo img {
+  width: 100%;
+  height: 100%;
+}
+
+.main-nav {
+  display: flex;
+  align-items: flex-end;
+  height: var(--height-nav-btn);
+}
+
+/* Navigation Links with Image Swap on Hover */
+.nav-link {
+  display: block;
+  height: var(--height-nav-btn);
+  position: relative;
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  text-decoration: none;
+}
+
+.nav-link img {
+  height: var(--height-nav-btn);
+  width: auto;
+  display: block;
+  transition: opacity 0.1s ease;
+}
+
+/* Hover state images - absolutely positioned on top */
+.nav-link .nav-img-hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+.nav-link:hover .nav-img-hover {
+  opacity: 1;
+}
+
+.nav-link:hover .nav-img-default {
+  opacity: 0;
+}
+
+/* ===========================================
+   Main Content Area
+   =========================================== */
+.main-content {
+  grid-area: main;
+  padding-top: 0;
+}
+
+/* Homepage Hero Image */
+.hero-image {
+  margin-top: 0;
+}
+
+.hero-image img {
+  width: 100%;
+  height: 360px;
+  object-fit: cover;
+}
+
+/* ===========================================
+   Footer
+   =========================================== */
+.site-footer {
+  grid-area: footer;
+  text-align: right;
+  padding: 20px 10px;
+  font-size: 10px;
+}
+
+/* ===========================================
+   Homepage Specific - Split Hero
+   =========================================== */
+.home-layout {
+  width: var(--width-site);
+  margin: 0;
+  display: grid;
+  /* Columns: sidebar (210) | main content area (736) | right margin (10) */
+  grid-template-columns: var(--width-sidebar) 1fr 10px;
+  grid-template-rows: var(--height-header) 360px 1fr;
+  min-height: 100vh;
+}
+
+/* Left black column - spans all rows */
+.home-sidebar {
+  grid-column: 1;
+  grid-row: 1 / 4;
+  background-color: var(--color-black);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.home-sidebar .sidebar-header {
+  height: var(--height-header);
+  background-color: var(--color-black);
+}
+
+.home-sidebar .hero-left {
+  width: var(--width-sidebar);
+  height: 360px;
+}
+
+.home-sidebar .hero-left img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.home-sidebar .sidebar-content {
+  flex: 1;
+  color: var(--color-white);
+  padding: 0;
+  min-height: 300px;
+}
+
+.home-sidebar .photo-credit {
+  font-size: 10px;
+  padding-top: 5px;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+.home-sidebar .caption {
+  display: flex;
+  justify-content: center;
+  font-size: 13px;
+  padding: 5px;
+  margin-top: 5px;
+}
+
+.home-sidebar .caption p {
+  margin: 0;
+  text-align: left;
+  padding: 5px;
+}
+
+.home-sidebar .caption i {
+  font-style: italic;
+}
+
+/* Header area (logo + nav) - with left padding for spacer effect */
+.home-layout .header {
+  grid-column: 2;
+  grid-row: 1;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  padding-left: var(--width-spacer);
+  gap: 0;
+}
+
+/* Hero right image - directly adjacent to left image, no gap */
+.home-layout .hero-right {
+  grid-column: 2 / 4;
+  grid-row: 2;
+}
+
+.home-layout .hero-right img {
+  width: 100%;
+  height: 360px;
+  object-fit: cover;
+}
+
+/* Footer area */
+.home-layout .site-footer {
+  grid-column: 2 / 4;
+  grid-row: 3;
+  text-align: right;
+  padding: 20px 10px;
+  font-size: 10px;
+}
+
+/* ===========================================
+   Typography Utilities
+   =========================================== */
+.text-small {
+  font-size: 10px;
+}
+
+.text-medium {
+  font-size: 13px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* ===========================================
+   Spacer (1px invisible element, legacy support)
+   =========================================== */
+.spacer-pixel {
+  width: 1px;
+  height: 1px;
+  display: block;
+}
+
+/* ===========================================
+   Gallery Index Page
+   =========================================== */
+.gallery-layout {
+  width: var(--width-site);
+  margin: 0;
+  display: grid;
+  grid-template-columns: var(--width-sidebar) 1fr 10px;
+  grid-template-rows: var(--height-header) 1fr auto;
+  min-height: 100vh;
+}
+
+/* Gallery sidebar - same as home but with different image sizing */
+.gallery-sidebar {
+  grid-column: 1;
+  grid-row: 1 / 4;
+  background-color: var(--color-black);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.gallery-sidebar .sidebar-header {
+  height: var(--height-header);
+  background-color: var(--color-black);
+}
+
+.gallery-sidebar .sidebar-image-container {
+  width: var(--width-sidebar);
+}
+
+.gallery-sidebar .sidebar-image-container img {
+  width: 100%;
+  height: auto;
+}
+
+.gallery-sidebar .sidebar-content {
+  flex: 1;
+  color: var(--color-white);
+  padding: 0;
+}
+
+.gallery-sidebar .photo-credit {
+  font-size: 10px;
+  padding-top: 5px;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+.gallery-sidebar .caption {
+  display: flex;
+  justify-content: center;
+  font-size: 13px;
+  padding: 5px;
+  margin-top: 5px;
+}
+
+.gallery-sidebar .caption p {
+  margin: 0;
+  text-align: left;
+  padding: 5px;
+}
+
+.gallery-sidebar .caption i {
+  font-style: italic;
+}
+
+/* Gallery header */
+.gallery-layout .header {
+  grid-column: 2;
+  grid-row: 1;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  padding-left: var(--width-spacer);
+  gap: 0;
+}
+
+/* Active navigation state (no hover effect needed) */
+.nav-active {
+  display: block;
+  height: var(--height-nav-btn);
+}
+
+.nav-active img {
+  height: var(--height-nav-btn);
+  width: auto;
+  display: block;
+}
+
+/* Gallery main content area */
+.gallery-content {
+  grid-column: 2;
+  grid-row: 2;
+  padding-left: var(--width-spacer);
+  padding-top: 15px;
+}
+
+/* Production grid - 2 columns */
+.production-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px 30px;
+}
+
+/* Individual production item */
+.production {
+  display: flex;
+  gap: 10px;
+}
+
+.production > a {
+  flex-shrink: 0;
+}
+
+.production img {
+  width: 135px;
+  height: auto;
+  border: none;
+}
+
+.production-info {
+  font-size: 10px;
+  line-height: 1.4;
+}
+
+.production-info h3 {
+  font-size: 13px;
+  font-weight: normal;
+  font-style: italic;
+  margin: 0 0 5px 0;
+}
+
+.production-info h3 a {
+  color: var(--color-link);
+  text-decoration: underline;
+}
+
+.production-info h3 a:hover {
+  text-decoration: underline;
+}
+
+.production-info p {
+  margin: 0;
+  color: var(--color-text);
+}
+
+/* Gallery footer */
+.gallery-layout .site-footer {
+  grid-column: 2 / 4;
+  grid-row: 3;
+  text-align: right;
+  padding: 20px 10px;
+  font-size: 10px;
+}
+
+/* ===========================================
+   Gallery Detail Page (Individual Photos)
+   =========================================== */
+.gallery-detail-layout {
+  width: var(--width-site);
+  margin: 0;
+  display: grid;
+  grid-template-columns: var(--width-sidebar) 1fr 10px;
+  grid-template-rows: var(--height-header) 1fr;
+  min-height: 100vh;
+}
+
+/* Gallery detail sidebar */
+.gallery-detail-sidebar {
+  grid-column: 1;
+  grid-row: 1 / 3;
+  background-color: var(--color-black);
+  color: var(--color-white);
+  padding: 5px;
+  min-height: 100vh;
+}
+
+.production-detail-info {
+  padding: 5px;
+  font-size: 13px;
+  line-height: 1.2;
+  margin-bottom: 10px;
+}
+
+.production-detail-info i {
+  font-style: italic;
+}
+
+/* Thumbnail grid in sidebar */
+.thumbnail-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 4px;
+  padding: 2px;
+  max-width: 200px;
+}
+
+.thumbnail-grid .thumb {
+  display: block;
+}
+
+.thumbnail-grid .thumb img {
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  border: 2px solid transparent;
+  box-sizing: border-box;
+  transition: border-color 0.1s ease;
+}
+
+.thumbnail-grid .thumb:hover img,
+.thumbnail-grid .thumb.active img {
+  border-color: var(--color-white);
+}
+
+/* Gallery detail header */
+.gallery-detail-layout .header {
+  grid-column: 2;
+  grid-row: 1;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  padding-left: var(--width-spacer);
+  gap: 0;
+}
+
+/* Photo viewer main content */
+.photo-viewer {
+  grid-column: 2;
+  grid-row: 2;
+  padding-left: var(--width-spacer);
+  padding-top: 10px;
+}
+
+/* Photo navigation arrows */
+.photo-nav {
+  margin-bottom: 10px;
+}
+
+.nav-arrow {
+  display: inline-block;
+  position: relative;
+  text-decoration: none;
+  margin-right: 5px;
+}
+
+.nav-arrow:hover {
+  text-decoration: none;
+}
+
+.nav-arrow img {
+  width: 24px;
+  height: 21px;
+  transition: opacity 0.1s ease;
+}
+
+.nav-arrow .nav-img-hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+.nav-arrow:hover .nav-img-hover {
+  opacity: 1;
+}
+
+.nav-arrow:hover .nav-img-default {
+  opacity: 0;
+}
+
+/* Large photo display */
+.large-photo {
+  margin-bottom: 5px;
+}
+
+.large-photo img {
+  max-width: 100%;
+  height: auto;
+}
+
+.photo-credit-detail {
+  font-size: 10px;
+  margin: 0;
+}
+
+/* ===========================================
+   Shared Page Layout (Contact, Resume, Schedule)
+   =========================================== */
+.page-layout {
+  width: var(--width-site);
+  margin: 0;
+  display: grid;
+  grid-template-columns: var(--width-sidebar) 1fr 10px;
+  grid-template-rows: var(--height-header) 1fr;
+  min-height: 100vh;
+}
+
+.page-layout .sidebar {
+  grid-column: 1;
+  grid-row: 1 / 3;
+  background-color: var(--color-black);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.page-layout .sidebar img {
+  width: var(--width-sidebar);
+  height: auto;
+}
+
+.page-layout .sidebar .photo-credit {
+  font-size: 10px;
+  color: var(--color-white);
+  padding-top: 5px;
+}
+
+.page-layout .sidebar .caption {
+  display: flex;
+  justify-content: center;
+  font-size: 13px;
+  color: var(--color-white);
+  padding: 5px;
+  margin-top: 5px;
+}
+
+.page-layout .sidebar .caption p {
+  margin: 0;
+  text-align: left;
+  padding: 5px;
+}
+
+.page-layout .sidebar .caption i {
+  font-style: italic;
+}
+
+.page-layout .main-content {
+  grid-column: 2;
+  grid-row: 1 / 3;
+  display: flex;
+  flex-direction: column;
+}
+
+.page-layout .header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  padding-left: var(--width-spacer);
+  height: var(--height-header);
+  gap: 0;
+}
+
+.page-layout .nav {
+  display: flex;
+  align-items: flex-end;
+  height: var(--height-nav-btn);
+}
+
+.page-layout .nav-current {
+  display: block;
+  height: var(--height-nav-btn);
+}
+
+.page-layout .nav-current img {
+  height: var(--height-nav-btn);
+  width: auto;
+}
+
+.page-layout .nav-link .nav-default {
+  display: block;
+}
+
+.page-layout .nav-link .nav-hover {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.page-layout .nav-link {
+  position: relative;
+  display: block;
+  height: var(--height-nav-btn);
+  text-decoration: none;
+}
+
+.page-layout .nav-link:hover {
+  text-decoration: none;
+}
+
+.page-layout .nav-link:hover .nav-default {
+  opacity: 0;
+}
+
+.page-layout .nav-link:hover .nav-hover {
+  display: block;
+  opacity: 1;
+}
+
+.page-layout .content-area {
+  flex: 1;
+  padding-left: var(--width-spacer);
+  padding-top: 15px;
+}
+
+/* ===========================================
+   Contact Page
+   =========================================== */
+.contact-content {
+  display: flex;
+  gap: 20px;
+}
+
+.contact-photo {
+  flex-shrink: 0;
+}
+
+.contact-photo img {
+  width: 269px;
+  height: auto;
+}
+
+.contact-photo .photo-caption {
+  font-size: 10px;
+  margin-top: 5px;
+}
+
+.contact-info {
+  padding-top: 10px;
+  line-height: 1.6;
+}
+
+.contact-info a {
+  color: var(--color-link);
+}
+
+/* ===========================================
+   Resume Page
+   =========================================== */
+.resume-content {
+  padding-top: 40px;
+}
+
+.resume-table {
+  border-collapse: collapse;
+}
+
+.resume-table tr {
+  vertical-align: top;
+  height: 40px;
+}
+
+.resume-table td {
+  padding: 8px;
+  vertical-align: top;
+}
+
+.resume-table .camera {
+  width: 50px;
+  text-align: center;
+}
+
+.resume-table .camera img {
+  width: 48px;
+  height: 40px;
+}
+
+.resume-table .year {
+  text-align: right;
+  width: 50px;
+  white-space: nowrap;
+}
+
+.resume-table .opera {
+  /* Opera title column */
+}
+
+.resume-table .venue {
+  /* Venue takes remaining space */
+}
+
+/* ===========================================
+   Schedule Page
+   =========================================== */
+.schedule-content {
+  padding-top: 40px;
+}
+
+.schedule-table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.schedule-table tr {
+  vertical-align: top;
+}
+
+.schedule-table td {
+  padding: 4px 8px;
+}
+
+.schedule-table .opera {
+  width: 300px;
+}
+
+.schedule-table .venue {
+  /* Venue takes remaining space */
+}
+
+.schedule-table .dates {
+  padding-left: 40px;
+  padding-bottom: 10px;
+}
+
+.schedule-table tr.spacer td {
+  height: 20px;
+}
+

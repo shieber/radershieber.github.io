@@ -1,108 +1,83 @@
-<html>
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<script LANGUAGE="JavaScript">
-
-<!--
-
-if (((navigator.appName == "Netscape")
-                        && (parseInt(navigator.appVersion) >= 3 ))
-                        || ((navigator.appName == "Microsoft Internet Explorer")                
-
-                             && (parseInt(navigator.appVersion) >= 4 ))) {
-                             version = "supported";
-                     }
-                             else {
-                             version = "notsupported";
-                     }
-if (version == "supported")
-{
-                        img1on = new Image(90, 33);
-                        img1on.src = "../images/gallery_on.gif";
-                        img1normal = new Image(90, 33);
-                        img1normal.src = "../images/gallery.gif";
-                        img2on = new Image(105, 33);
-                        img2on.src = "../images/schedule_on.gif";
-                        img2normal = new Image(105, 33);
-                        img2normal.src = "../images/schedule.gif";
-                        img3on = new Image(84, 33);
-                        img3on.src = "../images/resume_on.gif";
-                        img3normal = new Image(84, 33);
-                        img3normal.src = "../images/resume.gif";
-                        img4on = new Image(97, 33);
-                        img4on.src = "../images/contact_on.gif";
-                        img4normal = new Image(97, 33);
-                        img4normal.src = "../images/contact.gif";
-                        img6on = new Image(24, 21);
-                        img6on.src = "../images/prev_arrow_on.gif";
-                        img6normal = new Image(24, 21);
-                        img6normal.src = "../images/prev_arrow.gif";
-                        img7on = new Image(24, 21);
-                        img7on.src = "../images/next_arrow_on.gif";
-                        img7normal = new Image(24, 21);
-                        img7normal.src = "../images/next_arrow.gif";
-                        }
-        function img_on(imgName) {
-                        if (version == "supported") {
-                        imgOn = eval(imgName + "on.src");
-                        document.images [imgName].src = imgOn;
-                        }
-                        }
-        function img_normal(imgName) {
-                        if (version == "supported") {
-                        imgNormal = eval(imgName + "normal.src");
-                        document.images [imgName].src = imgNormal;
-                        }
-}
-
-//-->
-
-</script>
-<title>Chas Rader-Shieber - Stage Director</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chas Rader-Shieber - Stage Director</title>
+  <link rel="stylesheet" href="../styles.css">
 </head>
+<body>
 
-<body bgcolor="#99cc00" text="#000000" link="#00FFFF" vlink="#FF00FF" alink="#FF0000" topmargin="0" leftmargin="0">
+  <div class="gallery-detail-layout">
+    
+    <!-- Left Black Sidebar with production info and thumbnails -->
+    <aside class="gallery-detail-sidebar">
+      <div class="production-detail-info">
+        <p>
+          <i>Armide</i><br>
+          Gluck<br>
+          Juilliard Opera Center<br>
+          1999
+<br>
+          Scenery: David Zinn
+<br>
+          Costumes: David Zinn
+<br>
+          Lights: Lenore Doxsee
+        </p>
+      </div>
+      <div class="thumbnail-grid">
+        <a href="gallery_1999_armide_01.htm" class="thumb active"><img src="../images/gallery/armide_1999_01_sm.jpg" alt="Photo 1"></a>
+        <a href="gallery_1999_armide_02.htm" class="thumb"><img src="../images/gallery/armide_1999_02_sm.jpg" alt="Photo 2"></a>
+        <a href="gallery_1999_armide_03.htm" class="thumb"><img src="../images/gallery/armide_1999_03_sm.jpg" alt="Photo 3"></a>
+        <a href="gallery_1999_armide_04.htm" class="thumb"><img src="../images/gallery/armide_1999_04_sm.jpg" alt="Photo 4"></a>
+      </div>
+    </aside>
 
-<table border="0" cellpadding="0" cellspacing="0" width="956">
-  <tr>
-    <td width="210" bgcolor="#000000" rowspan="3" valign="top">
-      <table cellspacing="5">
-        <tr>
-          <td>
-            <p><font size="2" color="#FFFFFF"><i>Armide<br>
-            </i>Gluck<br>
-            Juilliard Opera Center<br>
-            1999<br>
-            Scenery: David Zinn<br>
-            Costumes: David Zinn<br>
-            Lights: Lenore Doxsee</font></p>
-          </td>
-        </tr>
-      </table>
-      <p>
-      <a href="gallery_1999_armide_01.htm"><img border="0" src="../images/gallery/armide_1999_01_sm.jpg" hspace="2" vspace="2" width="100" height="100" alt="Click to enlarge photograph"></a><a href="gallery_1999_armide_02.htm"><img border="0" src="../images/gallery/armide_1999_02_sm.jpg" hspace="2" vspace="2" width="100" height="100" alt="Click to enlarge photograph"></a><br>
-      <a href="gallery_1999_armide_03.htm"><img border="0" src="../images/gallery/armide_1999_03_sm.jpg" hspace="2" vspace="2" width="100" height="100" alt="Click to enlarge photograph"></a><a href="gallery_1999_armide_04.htm"><img border="0" src="../images/gallery/armide_1999_04_sm.jpg" hspace="2" vspace="2" width="100" height="100" alt="Click to enlarge photograph"></a>
-      </p>
-    </td>
-    <td width="20" bgcolor="#99cc00" height="77" rowspan="3">&nbsp;</td>
-    <td width="275" bgcolor="#99cc00" height="67" valign="bottom"><a href="../index.htm"><img border="0" src="../images/crs_sd.gif" onMouseover="status='Home page'; return true" onMouseout="status=''; return true" width="275" height="67"></a></td>
-    <td width="441" bgcolor="#99cc00" height="67" valign="bottom"><a href="gallery.htm" onMouseover="img_on('img1'); status='Gallery'; return true" onMouseout="img_normal('img1'); status=''; return true"><img border="0" src="../images/gallery.gif" name="img1" width="90" height="33"></a><a href="../schedule.htm" onMouseover="img_on('img2'); status='Schedule'; return true" onMouseout="img_normal('img2'); status=''; return true"><img border="0" src="../images/schedule.gif" name="img2" width="105" height="33"></a><a href="../resume.htm" onMouseover="img_on('img3'); status='R�sum�'; return true" onMouseout="img_normal('img3'); status=''; return true"><img border="0" src="../images/resume.gif" name="img3" width="84" height="33"></a><a href="../contact.htm" onMouseover="img_on('img4'); status='Contact'; return true" onMouseout="img_normal('img4'); status=''; return true"><img border="0" src="../images/contact.gif" name="img4" width="97" height="33"></a></td>
-    <td width="10" bgcolor="#99cc00" height="77" rowspan="3">&nbsp;</td>
-  </tr>
-  <tr>
-    <td width="716" bgcolor="#99cc00" colspan="2" height="10"><img border="0" src="../images/inv_pixel.gif" width="716" height="1"><br></td>
-  </tr>
-  <tr>
-    <td width="716" bgcolor="#99cc00" valign="top" colspan="2" height="800">
-	<br>
-	<a href="gallery_1999_armide_04.htm" onMouseover="img_on('img6'); status='Previous Photograph'; return true" onMouseout="img_normal('img6'); status=''; return true"><img border="0" src="../images/prev_arrow.gif" name="img6" width="24" height="21"></a>
-	<a href="gallery_1999_armide_02.htm" onMouseover="img_on('img7'); status='Next Photograph'; return true" onMouseout="img_normal('img7'); status=''; return true"><img border="0" src="../images/next_arrow.gif" name="img7" width="24" height="21"></a>
-	<br>
-	<img border="0" src="../images/gallery/armide_1999_01_lg.jpg" width="500" height="300">
-    </td>
-  </tr>
-</table>
+    <!-- Header -->
+    <header class="header">
+      <a href="../index.htm" class="logo">
+        <img src="../images/crs_sd.gif" alt="Chas Rader-Shieber - Stage Director">
+      </a>
+      <nav class="main-nav">
+        <a href="gallery.htm" class="nav-link">
+          <img src="../images/gallery.gif" alt="Gallery" class="nav-img-default">
+          <img src="../images/gallery_on.gif" alt="Gallery" class="nav-img-hover">
+        </a>
+        <a href="../schedule.htm" class="nav-link">
+          <img src="../images/schedule.gif" alt="Schedule" class="nav-img-default">
+          <img src="../images/schedule_on.gif" alt="Schedule" class="nav-img-hover">
+        </a>
+        <a href="../resume.htm" class="nav-link">
+          <img src="../images/resume.gif" alt="Résumé" class="nav-img-default">
+          <img src="../images/resume_on.gif" alt="Résumé" class="nav-img-hover">
+        </a>
+        <a href="../contact.htm" class="nav-link">
+          <img src="../images/contact.gif" alt="Contact" class="nav-img-default">
+          <img src="../images/contact_on.gif" alt="Contact" class="nav-img-hover">
+        </a>
+      </nav>
+    </header>
+
+    <!-- Main Content: Photo viewer -->
+    <main class="photo-viewer">
+      <div class="photo-nav">
+        <a href="gallery_1999_armide_04.htm" class="nav-arrow">
+          <img src="../images/prev_arrow.gif" alt="Previous" class="nav-img-default">
+          <img src="../images/prev_arrow_on.gif" alt="Previous" class="nav-img-hover">
+        </a>
+        <a href="gallery_1999_armide_02.htm" class="nav-arrow">
+          <img src="../images/next_arrow.gif" alt="Next" class="nav-img-default">
+          <img src="../images/next_arrow_on.gif" alt="Next" class="nav-img-hover">
+        </a>
+      </div>
+      <div class="large-photo">
+        <img src="../images/gallery/armide_1999_01_lg.jpg" alt="Armide - Photo 1">
+      </div>
+      <p class="photo-credit-detail"></p>
+    </main>
+
+  </div>
 
 </body>
-
 </html>
